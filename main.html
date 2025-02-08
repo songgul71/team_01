@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>돌봐효 - 홈</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/common/favicon.png" type="image/x-icon">
+
+  <!-- font -->
+  <link rel="stylesheet" href="css/font.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/sub.css">
+
+  <!-- js -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+
+</head>
+
+
+<body>
+  <!-- 문서시작 -->
+  <div id="wrap">
+
+    <!-- inner -->
+    <div class="inner">
+
+      <!-- 상단바 -->
+      <header class="topbar_main">
+        <h1><a href="main.html"><img src="img/common/logo_w.svg" alt="돌봐효 로고"></a></h1>
+        <a href="sub/notification.html" class="bell"><img src="img/main/icon_bell_active.png" alt="알림"></a>
+      </header>
+
+      <!-- 메인 -->
+      <main id="main">
+
+        <!--보호대상자프로필카드-->
+        <section id="card_user">
+
+          <!-- inner -->
+          <div class="inner">
+
+            <!-- 보호대상자프로필 -->
+            <div class="profile_area">
+              <!-- 이미지 -->
+              <img src="img/common/img_user.png" alt="사용자 프로필 이미지">
+              <!-- 정보 -->
+              <div class="name">
+                <div class="name_box">
+                  <h2>홍길동님</h2>
+                  <div class="tag"><img src="img/main/icon_inside.png" alt="재실중">재실중</div>
+                </div><!-- .name_box -->
+                <ul>
+                  <li>87세</li>
+                  <li>남</li>
+                  <li>010-1234-5678</li>
+                </ul>
+                <a href="#" class="call"><img src="img/main/icon_call.png" alt="전화걸기">전화걸기</a>
+              </div><!--.name-->
+              <a href="#" class="call_t"><img src="img/main/btn_call.png" alt="전화걸기"></a>
+            </div><!-- .profile_area -->
+          </div><!-- .inner -->
+        </section>
+
+        <!--최신알림내역 카드-->
+        <section id="latest_notice">
+          <!-- inner -->
+          <div class="inner">
+            <a href="sub/notification.html">
+              <h5 class="top">
+                <span class="latest_tag">최신알림</span>
+                <span class="latest_date">09.01(월) 18:01</span>
+              </h5>
+              <p>보호 대상자께서 냉장고를 오랫동안 사용하지 않으셨습니다. 확인부탁드립니다.</p>
+            </a>
+          </div><!-- .inner -->
+        </section>
+
+        <!--등록된기기 카드 리스트-->
+        <section id="place">
+          <!-- 제목 -->
+          <div class="top">
+            <h3>등록된기기</h3>
+            <div class="main_btn_list">
+              <button class="active"></button>
+              <button></button>
+            </div><!--.main_btn_list-->
+          </div><!--.top-->
+
+          <!-- 카드리스트 -->
+          <div class="card_list container">
+
+            <!-- 장소카드리스트 카드형 -->
+            <ul class="place_cardlist card">
+
+              <!-- 장소카드 현관 -->
+              <li class="place_card">
+                <a href="sub/report.html#door">
+                  <i class="icon door"></i>
+                  <div class="txt_box">
+                    <h4>현관</h4>
+                    <ol>
+                      <li><img src="img/main/icon_alarm_black.png" alt="경과시간">
+                        <p>2시간 30분 경과</p>
+                      </li>
+                      <li><img src="img/main/icon_calendar.png" alt="날짜">
+                        <p>09.02(월) 13:59</p>
+                      </li>
+                    </ol>
+                  </div>
+                </a>
+              </li>
+
+              <!-- 장소카드 냉장고 -->
+              <li class="place_card">
+                <a href="sub/report.html#refrigerator">
+                  <i class="icon frige"></i>
+                  <div class="txt_box">
+                    <h4>냉장고</h4>
+                    <ol>
+                      <li class="warning"><img src="img/main/icon_alarm_yellow.png" alt="경과시간">
+                        <p>2시간 30분 경과</p>
+                      </li>
+                      <li><img src="img/main/icon_calendar.png" alt="날짜">
+                        <p>09.02(월) 13:59</p>
+                      </li>
+                    </ol>
+                  </div>
+                </a>
+              </li>
+
+              <!-- 장소카드 화장실 -->
+              <li class="place_card">
+                <a href="sub/report.html#toilet">
+                  <i class="icon toilet"></i>
+                  <div class="txt_box">
+                    <h4>화장실</h4>
+                    <ol>
+                      <li><img src="img/main/icon_alarm_black.png" alt="경과시간">
+                        <p>2시간 30분 경과</p>
+                      </li>
+                      <li><img src="img/main/icon_calendar.png" alt="날짜">
+                        <p>09.02(월) 13:59</p>
+                      </li>
+                    </ol>
+                  </div>
+                </a>
+              </li>
+
+              <!-- 장호카드 돌봄콜 -->
+              <li class="place_card">
+                <a href="sub/report.html#siren">
+                  <i class="icon siren"></i>
+                  <div class="txt_box">
+                    <h4>돌봄콜</h4>
+                    <ol>
+                      <li><img src="img/main/icon_alarm_black.png" alt="경과시간">
+                        <p>2시간 30분 경과</p>
+                      </li>
+                      <li><img src="img/main/icon_calendar.png" alt="날짜">
+                        <p>09.02(월) 13:59</p>
+                      </li>
+                    </ol>
+                  </div>
+                </a>
+              </li>
+            </ul><!-- .place_cardlist .card -->
+
+            <!-- 장소카드리스트 목록형 -->
+            <ul class="place_cardlist list">
+              <!-- 장소카드 현관 -->
+              <li class="place_card">
+                <a href="sub/report.html#door">
+                  <i class="icon door"></i>
+                  <div class="txt_box">
+                    <h4>현관</h4>
+                    <ol>
+                      <li><img src="img/main/icon_alarm_black.png" alt="경과시간">
+                        <p>2시간 30분 경과</p>
+                      </li>
+                      <li><img src="img/main/icon_calendar.png" alt="날짜">
+                        <p>09.02(월) 13:59</p>
+                      </li>
+                    </ol>
+                  </div>
+                </a>
+              </li>
+
+              <!-- 장소카드 냉장고 -->
+              <li class="place_card">
+                <a href="sub/report.html#refrigerator">
+                  <i class="icon frige"></i>
+                  <div class="txt_box">
+                    <h4>냉장고</h4>
+                    <ol>
+                      <li class="warning"><img src="img/main/icon_alarm_yellow.png" alt="경과시간">
+                        <p>2시간 30분 경과</p>
+                      </li>
+                      <li><img src="img/main/icon_calendar.png" alt="날짜">
+                        <p>09.02(월) 13:59</p>
+                      </li>
+                    </ol>
+                  </div>
+                </a>
+              </li>
+
+              <!-- 장소카드 화장실 -->
+              <li class="place_card">
+                <a href="sub/report.html#toilet">
+                  <i class="icon toilet"></i>
+                  <div class="txt_box">
+                    <h4>화장실</h4>
+                    <ol>
+                      <li><img src="img/main/icon_alarm_black.png" alt="경과시간">
+                        <p>2시간 30분 경과</p>
+                      </li>
+                      <li><img src="img/main/icon_calendar.png" alt="날짜">
+                        <p>09.02(월) 13:59</p>
+                      </li>
+                    </ol>
+                  </div>
+                </a>
+              </li>
+
+              <!-- 장소카드 돌봄콜 -->
+              <li class="place_card">
+                <a href="sub/report.html#siren">
+                  <i class="icon siren"></i>
+                  <div class="txt_box">
+                    <h4>돌봄콜</h4>
+                    <ol>
+                      <li><img src="img/main/icon_alarm_black.png" alt="경과시간">
+                        <p>2시간 30분 경과</p>
+                      </li>
+                      <li><img src="img/main/icon_calendar.png" alt="날짜">
+                        <p>09.02(월) 13:59</p>
+                      </li>
+                    </ol>
+                  </div>
+                </a>
+              </li>
+
+            </ul><!-- .place_cardlist .list -->
+          </div><!--.card_list-->
+        </section>
+
+      </main><!-- #main -->
+
+    </div><!-- .inner -->
+
+    <!-- 하단 내비게이션바-->
+    <ul id="nav_bar">
+      <li><a href="main.html"><img src="img/common/icon_home_blue.png" alt="메인홈"></a></li>
+      <li><a href="sub/mydevice.html"><img src="img/common/icon_sensors_gray.png" alt="내기기"></a></li>
+      <li><a href="sub/User_Setting_00.html"><img src="img/common/icon_user_gray.png" alt="사용자관리"></a></li>
+    </ul><!-- //nav_bar -->
+
+    <!-- 배경 -->
+    <div class="bg"></div>
+
+  </div><!-- #wrap -->
+</body>
+
+</html>

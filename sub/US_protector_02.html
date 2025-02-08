@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>돌봐효 - 사용자관리</title>
+
+  <link rel="shortcut icon" href="../img/common/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="../css/font.css">
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+
+  <script defer src="../js/jquery-3.7.1.min.js"></script>
+  <script defer src="../js/main.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="container">
+      <div class="inner">
+
+        <!-- TOP_BAT_SUB -->
+        <header class="profile_sub_tit tit topbar_sub">
+          <a href="US_protector_01.html">
+            <img class="back" src="../img/sub/back_arrow_m.png" alt="뒤로가기">
+          </a>
+          <h2>프로필</h2>
+        </header><!--//topbar_sub-->
+
+        <!-- Profile_Tap_Menu -->
+        <ul class="tab_menu">
+          <li class="active"><a href="US_protector_01.html">
+              <h3>보호자</h3>
+            </a></li>
+          <li><a href="US_person_protection_01.html">
+              <h3>보호대상자</h3>
+            </a></li>
+        </ul><!--//tab_menu-->
+
+        <!-- 보호자 정보 / 주보호자 변경 -->
+        <main class="profile_change_container container_s tab_container_sec">
+          <h4 class="profile_subtit">주보호자 변경</h4>
+
+          <fieldset class="sec">
+            <ul class="list">
+              <li>
+                <label>
+                  <input type="radio" name="family" checked>
+                  <div class="flex">홍돌봄
+                    <p class="f_14">010-1111-5678<span class="line">가족</span></p>
+                  </div>
+                </label>
+              </li>
+
+              <li>
+                <label>
+                  <input type="radio" name="family">
+                  <div class="flex">김영희
+                    <p class="f_14">010-3333-5678<span class="line">보호사</span></p>
+                  </div>
+                </label>
+              </li>
+
+              <li>
+                <label>
+                  <input type="radio" name="family">
+                  <div class="flex">홍철수
+                    <p class="f_14">010-2222-5678<span class="line">가족</span></p>
+                  </div>
+                </label>
+              </li>
+            </ul>
+          </fieldset><!--//sec-->
+        </main><!--//profile_change_container-->
+
+      </div><!--//inner-->
+
+      <!-- btn -->
+      <ul class="btn_list">
+        <li><a href="US_protector_01.html" class="btn_fill">저장</a></li>
+      </ul>
+
+    </div><!--//container-->
+    <div class="bg"></div>
+  </div><!--//wrap-->
+</body>
+
+</html>

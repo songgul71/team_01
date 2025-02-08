@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>돌봐효 - 사용자관리</title>
+
+  <link rel="shortcut icon" href="../img/common/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="../css/font.css">
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+
+  <script defer src="../js/jquery-3.7.1.min.js"></script>
+  <script defer src="../js/main.js"></script>
+
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="container">
+      <div class="inner">
+
+        <!-- TOP_BAR_SUB -->
+        <header class="profile_sub_tit tit topbar_sub">
+          <a href="User_Setting_00.html">
+            <img class="back" src="../img/sub/back_arrow_m.png" alt="뒤로가기">
+          </a>
+          <h2>알림 세부 설정</h2>
+        </header><!--//topbar_sub-->
+
+        <!-- Profile_Tap_Menu -->
+        <ul class="tab_menu ">
+          <li class="active"><a href="US_alarem_01.html">
+              <h3>알림주기등록</h3>
+            </a></li>
+          <li><a href="US_alarem_03.html">
+              <h3>센서별알림</h3>
+            </a></li>
+        </ul><!--//tab_menu-->
+
+        <!-- contents -->
+        <main class="alarem_container container_s tab_container_sec ">
+
+          <div class="notice_style">
+            <p class="notice_txt">주기 미설정시 1시간 간격으로 알림이 울립니다.</p>
+          </div>
+
+          <ul class="list">
+            <li>
+              <a href="#">
+                <img class="boss_sensor" src="../img/common/icon_refrigerator.png" alt="냉장고 센서 아이콘">
+                냉장고
+                <p class="f_14">문열림감지
+                  <span class="line">반복 3회</span><span class="line">20분 간격</span>
+                </p>
+                <img class="arrow" src="../img/sub/arrow_m.png" alt="센서 알림 설정 페이지로 이동">
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img class="boss_sensor" src="../img/common/icon_toilet.png" alt="화장실 센서 아이콘">
+                화장실
+                <p class="f_14">움직임감지
+                  <span class="line">반복 5회</span><span class="line">20분 간격</span>
+                </p>
+                <img class="arrow" src="../img/sub/arrow_m.png" alt="센서 알림 설정 페이지로 이동">
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img class="boss_sensor" src="../img/common/icon_door.png" alt="화장실 센서 아이콘">
+                현관
+
+                <p class="f_14">문열림감지
+                  <span class="line">반복 7회</span><span class="line">5분 간격</span>
+                </p>
+                <img class="arrow" src="../img/sub/arrow_m.png" alt="센서 알림 설정 페이지로 이동">
+              </a>
+            </li>
+
+          </ul>
+
+        </main><!--//alarem_container-->
+
+      </div><!--//inner-->
+
+      <!-- btn -->
+      <ul class="btn_list">
+        <li><a href="US_alarem_02.html" class="btn_fill">알림 주기 추가</a></li>
+      </ul>
+
+    </div><!--//container-->
+    <div class="bg"></div>
+  </div><!--//wrap-->
+</body>
+
+</html>

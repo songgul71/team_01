@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>돌봐효 - 사용자관리</title>
+
+  <link rel="shortcut icon" href="../img/common/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="../css/font.css">
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+
+  <script defer src="../js/jquery-3.7.1.min.js"></script>
+  <script defer src="../js/main.js"></script>
+
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="container">
+      <div class="inner">
+
+        <!-- SUB TIT -->
+        <header class="profile_sub_tit tit topbar_sub">
+          <a href="US_disturb_setting_01.html">
+            <img class="back" src="../img/sub/back_arrow_m.png" alt="뒤로가기">
+          </a>
+          <h2>방해금지모드</h2>
+        </header><!--//topbar_sub-->
+
+        <!-- Contents -->
+        <main class="disturb_set_container container_s">
+
+          <div class="sec">
+            <h4>일정이름</h4>
+            <div class="placeForm">
+              <input type="text" placeholder="방해금지모드" class="txt_box">
+            </div>
+          </div><!--//sec-->
+
+          <div class="sec">
+            <h4>시간</h4>
+            <ul class="list">
+              <li>
+                <div class="dusturb_flex">
+                  <p>시작시간</p>
+                  <p class="disturb_time">오후 <span class="line_hypen">10:00</span></p>
+                </div>
+              </li>
+
+              <li>
+                <div class="dusturb_flex">
+                  <p>종료시간</p>
+                  <p class="disturb_time">오전 <span class="line_hypen">07:00</span></p>
+                </div>
+              </li>
+
+              <li>
+                <div class="dusturb_flex">종일
+                  <div class="toggle arrow">
+                    <input type="checkbox" id="toggle" hidden>
+                    <label for="toggle" class="toggle_switch">
+                      <span class="toggle_button"></span>
+                    </label>
+                  </div><!--//toggle-->
+                </div><!--//dusturb_flex-->
+              </li>
+            </ul>
+          </div><!--//sec-->
+
+          <div class="sec">
+            <h4>반복</h4>
+            <ul class="disturb_date_box">
+              <li>
+                <button type="button" class="disturb_date">일</button>
+              </li>
+              <li class="active">
+                <button type="button" class="disturb_date">월</button>
+              </li>
+              <li>
+                <button type="button" class="disturb_date">화</button>
+              </li>
+              <li>
+                <button type="button" class="disturb_date">수</button>
+              </li>
+              <li>
+                <button type="button" class="disturb_date">목</button>
+              </li>
+              <li>
+                <button type="button" class="disturb_date">금</button>
+              </li>
+              <li>
+                <button type="button" class="disturb_date">토</button>
+              </li>
+            </ul>
+          </div><!--//sec-->
+
+        </main><!--//disturb_set_container-->
+
+        <!-- <div class="disturb_time_set_pop_wrap">
+          <div class="disturb_time_set_pop">
+            <h4>시작시간</h4>
+
+            <div class="time_flex_box">
+
+              <div class="ampm_left">
+                <p class="color_888">오전</p>
+                <p class="choice_pick">오후</p>
+              </div>
+              <div class="time_num_right">
+
+                <div class="time_hour">
+                  <ul class="time_flex">
+
+                    <li class="num_03">
+                      <p class="color_bbb">12</p> :
+                      <p class="color_bbb dot">02</p>
+                    </li>
+
+                    <li class="num_02">
+                      <p class="color_888">11</p> :
+                      <p class="color_888 dot">01</p>
+                    </li>
+
+                    <li class="choice_pick">
+                      <p>10</p> :
+                      <p class="dot">00</p>
+                    </li>
+
+                    <li class="num_02">
+                      <p class="color_888">09</p> :
+                      <p class="color_888 dot">59</p>
+                    </li>
+
+                    <li class="num_03">
+                      <p class="color_bbb">08</p> :
+                      <p class="color_bbb dot">58</p>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+            <ul class="modal_btn_list ">
+              <li><a href="#" class="modal_btn ">저장</a></li>
+            </ul>
+
+          </div>
+        </div> -->
+
+      </div><!--//inner-->
+
+      <!-- btn -->
+      <ul class="btn_list">
+        <li><a href="US_disturb_setting_01_01.html" class="btn_fill">저장</a></li>
+      </ul>
+
+    </div><!--//container-->
+    <div class="bg"></div>
+  </div><!--//wrap-->
+</body>
+
+</html>

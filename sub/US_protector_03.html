@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>돌봐효 - 사용자관리</title>
+  <link rel="shortcut icon" href="../img/common/favicon.png" type="image/x-icon">
+
+  <link rel="shortcut icon" href="../img/common/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="../css/font.css">
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+
+  <script defer src="../js/jquery-3.7.1.min.js"></script>
+  <script defer src="../js/main.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="container">
+      <div class="inner">
+
+        <!-- TOP_BAT_SUB -->
+        <header class="profile_sub_tit tit topbar_sub">
+          <a href="US_protector_01.html">
+            <img class="back" src="../img/sub/back_arrow_m.png" alt="뒤로가기">
+          </a>
+          <h2>프로필</h2>
+        </header><!--//topbar_sub-->
+
+        <!-- Profile_Tap_Menu -->
+        <ul class="tab_menu">
+          <li class="active"><a href="US_protector_01.html">
+              <h3>보호자</h3>
+            </a></li>
+          <li><a href="US_person_protection_01.html">
+              <h3>보호대상자</h3>
+            </a></li>
+        </ul><!--//tab_menu-->
+
+        <!-- contents -->
+        <main class="plus_protector_container container_s tab_container_sec">
+
+          <div class="sec">
+            <label for="name">
+              <h3>보호자이름</h3>
+            </label>
+            <div class="input_txt placeForm">
+              <input id="name" type="text" placeholder="이름" class="txt_box">
+              <img src="../img/sub/cancle.png" alt="내용 삭제">
+            </div>
+          </div>
+
+          <div class="sec ">
+            <label for="num">
+              <h3>보호자 연락처</h3>
+            </label>
+            <div class="input_txt protector_num_box placeForm">
+              <input id="num" type="text" class="protector_num txt_box" placeholder="010"> -
+              <input type="text" class="protector_num txt_box"> -
+              <input type="text" class="protector_num txt_box">
+            </div>
+          </div>
+
+          <div class="sec">
+            <h3>보호 대상자와의 관계</h3>
+            <div class="protector_relation_box">
+              <div class="input_txt">
+                <label>
+                  <input type="radio" class="protector_relation" name="relation" checked>가족
+                </label>
+              </div>
+              <div class="input_txt">
+                <label>
+                  <input type="radio" class="protector_relation" name="relation">요양보호사
+                </label>
+              </div>
+            </div><!--//protector_relation_box-->
+          </div>
+
+          <!-- <div class="sec">
+            <h3>보호 대상자와의 관계</h3>
+            <div class="protector_relation_box">
+              <div class="input_txt">
+                <input id="family" type="radio" class="protector_relation">
+                <label for="family">가족</label>
+              </div>
+
+              <div class="input_txt">
+                <input id="nursing_care" type="radio" class="protector_relation">
+                <label for="nursing_care">요양보호사</label>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="main_protection_position">
+            <h3>주보호자 설정</h3>
+            <div class="toggle">
+              <input type="checkbox" id="toggle" hidden>
+              <label for="toggle" class="toggle_switch">
+                <span class="toggle_button"></span>
+              </label>
+            </div><!--//toggle-->
+          </div>
+
+        </main><!--//protector_modi_container modify -->
+      </div><!--//inner-->
+
+      <!-- btn -->
+      <ul class="btn_list">
+        <li><a href="US_protector_01.html" class="btn_stroke">취소</a></li>
+        <li><a href="US_protector_01_02.html" class="btn_fill">저장</a></li>
+      </ul>
+
+    </div><!--//container-->
+    <div class="bg"></div>
+  </div><!--//wrap-->
+</body>
+
+</html>

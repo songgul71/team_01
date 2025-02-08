@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>돌봐효 - 장소추가</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../img/common/favicon.png" type="image/x-icon">
+
+  <!-- font -->
+  <link rel="stylesheet" href="../css/font.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+
+  <!-- js -->
+  <script defer src="../js/jquery-3.7.1.min.js"></script>
+  <script defer src="../js/main.js"></script>
+
+</head>
+
+<body>
+
+  <!-- 문서시작 -->
+  <div id="wrap">
+
+    <!-- 상단바 -->
+    <header class="topbar_sub">
+      <a href="mydevice.html"><img src="../img/sub/back_arrow_m.png" alt="뒤로가기"></a>
+      <h2>장소추가</h2>
+    </header><!-- //topbar_sub -->
+
+    <!-- 내기기 -->
+    <div class="container placeadd">
+
+      <!-- inner -->
+      <div class="inner">
+
+        <!-- 아이콘 섹션 -->
+        <div class="sec">
+          <!-- 섹션제목 -->
+          <h3 class="tit black">아이콘</h3>
+
+          <!-- 이미지 -->
+          <div class="icon_box">
+            <i class="icon pin"></i>
+            <button class="middle_icon pic" value="아이콘 변경"></button>
+          </div><!-- //icon_box -->
+        </div><!-- //sec -->
+
+        <!-- 장소명 -->
+        <div class="sec">
+          <h3 class="tit black">장소명</h3>
+
+          <form class="placeForm">
+            <input type="text" class="txt_box" placeholder="장소를 입력해 주세요.">
+          </form>
+        </div><!-- //sec -->
+
+
+        <!-- 섹션 -->
+        <div class="sec">
+          <!-- 섹션제목 -->
+          <h3 class="tit black">센서</h3>
+
+          <!-- 센서추가 -->
+          <div class="add_box">
+            <i class="small_icon small_sensor"></i>
+            <p>센서추가</p>
+            <span class="add"></span>
+          </div><!-- //add_box -->
+
+          <!-- 센서리스트 -->
+          <ul class="sensor_list">
+            <li>
+              <i class="sensor_icon small_move"></i>
+              <p>움직임 센서</p>
+              <span class="sensor_icon remove"></span>
+            </li>
+          </ul><!-- //place_card -->
+
+        </div><!-- //sec -->
+
+      </div><!-- //inner -->
+
+      <!-- 버튼리스트 -->
+      <ul class="btn_list">
+        <li class="btn_fill">확인</li>
+      </ul><!-- //btn_list -->
+
+      <!-- 센서추가모달 -->
+      <div class="modal_wrap sensor_add">
+        <!-- 모달박스 -->
+        <div class="modal_box">
+          <!-- 모달텍스트 -->
+          <div class="modal_txt">
+            <h5>센서추가</h5>
+            <p>
+              추가할 센서를 선택해 주세요.<br>
+              <span class="blue">(다중선택가능)</span>
+            </p>
+          </div><!-- //modal_txt -->
+          <!-- 센서리스트 -->
+          <ul class="modal_con">
+            <li class="tit">
+              <span class="icon_check"></span>
+              <i class="icon open"></i>
+              <h4>문열림센서</h4>
+            </li>
+            <li class="tit">
+              <span class="icon_check"></span>
+              <i class="icon move"></i>
+              <h4>움직임센서</h4>
+            </li>
+          </ul>
+
+          <!-- 모달버튼 -->
+          <ul class="modal_btn_list">
+            <li class="btn stroke">취소</li>
+            <li class="btn fill">추가</li>
+          </ul>
+        </div><!-- //modal_box -->
+      </div><!-- //modal_wrap sensoradd -->
+
+      <!-- 완료모달 -->
+      <div class="modal_wrap complete">
+        <!-- 모달박스 -->
+        <div class="modal_box">
+          <!-- 모달텍스트 -->
+          <div class="modal_txt">
+            <h5>추가 완료</h5>
+            <p>장소가 추가 되었습니다.</p>
+          </div><!-- //modal_txt -->
+          <!-- 모달버튼 -->
+          <ul class="modal_btn_list">
+            <li class="btn fill">확인</li>
+          </ul>
+        </div><!-- //modal_box -->
+      </div><!-- //modal_wrap complete -->
+
+    </div><!-- //container placeadd -->
+
+    <!-- 배경 -->
+    <div class="bg"></div>
+
+  </div><!-- //wrap -->
+
+</body>
+
+</html>

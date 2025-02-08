@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>돌봐효 - 사용자관리</title>
+
+  <link rel="shortcut icon" href="../img/common/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="../css/font.css">
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+
+  <script defer src="../js/jquery-3.7.1.min.js"></script>
+  <script defer src="../js/main.js"></script>
+
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="container">
+      <div class="inner">
+
+        <!-- TOP_BAT_SUB -->
+        <header class="profile_sub_tit tit topbar_sub">
+          <a href="User_Setting_00.html">
+            <img class="back" src="../img/sub/back_arrow_m.png" alt="뒤로가기">
+          </a>
+          <h2>알림 세부 설정</h2>
+        </header><!--//topbar_sub-->
+
+        <!-- Profile_Tap_Menu -->
+        <ul class="tab_menu">
+          <li><a href="US_alarem_01.html">
+              <h3>알림주기등록</h3>
+            </a></li>
+          <li class="active"><a href="US_alarem_03.html">
+              <h3>센서별알림</h3>
+            </a></li>
+        </ul><!--//tab_menu-->
+
+        <main class="onoff_sensor_list_container container_s tab_container_sec">
+          <ul class="list">
+            <li class="alarem_control">
+              <img src="../img/sub/icon_hub.png" alt="허브 알림 아이콘">
+              허브
+              <div class="toggle arrow">
+                <input type="checkbox" id="toggle" hidden>
+                <label for="toggle" class="toggle_switch">
+                  <span class="toggle_button"></span>
+                </label>
+              </div><!--//toggle-->
+            </li>
+
+            <li class="alarem_control">
+              <img src="../img/common/icon_door.png" alt="현관 알림 아이콘">
+              현관
+              <div class="toggle arrow">
+                <input type="checkbox" id="toggle_02" hidden>
+                <label for="toggle_02" class="toggle_switch_02">
+                  <span class="toggle_button_02"></span>
+                </label>
+              </div><!--//toggle-->
+            </li>
+
+            <li class="alarem_control">
+              <img src="../img/common/icon_refrigerator.png" alt="냉장고 알림 아이콘">
+              냉장고
+              <div class="toggle arrow">
+                <input type="checkbox" id="toggle_03" hidden>
+                <label for="toggle_03" class="toggle_switch_03">
+                  <span class="toggle_button_03"></span>
+                </label>
+              </div><!--//toggle-->
+            </li>
+
+            <li class="alarem_control">
+              <img src="../img/common/icon_toilet.png" alt="화장실 알림 아이콘">
+              화장실
+              <div class="toggle arrow">
+                <input type="checkbox" id="toggle_04" hidden>
+                <label for="toggle_04" class="toggle_switch_04">
+                  <span class="toggle_button_04"></span>
+                </label>
+              </div><!--//toggle-->
+            </li>
+
+            <li class="alarem_control">
+              <img src="../img/common/icon_siren.png" alt="돌봄콜 알림 아이콘">
+              돌봄콜
+              <div class="toggle arrow">
+                <input type="checkbox" id="toggle_05" hidden>
+                <label for="toggle_05" class="toggle_switch_05">
+                  <span class="toggle_button_05"></span>
+                </label>
+              </div><!--//toggle-->
+            </li>
+          </ul>
+        </main>
+
+      </div><!--//inner-->
+
+      <!-- btn -->
+      <ul class="btn_list">
+        <li><a href="US_alarem_03_01.html" class="btn_fill">장소 추가</a></li>
+      </ul>
+
+    </div><!--//container-->
+    <div class="bg"></div>
+  </div><!--//wrap-->
+</body>
+
+</html>

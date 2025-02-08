@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>돌봐효 - 사용자관리</title>
+
+  <link rel="shortcut icon" href="../img/common/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="../css/font.css">
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+
+  <script defer src="../js/jquery-3.7.1.min.js"></script>
+  <script defer src="../js/main.js"></script>
+
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="container">
+      <div class="inner">
+
+        <!-- SUB TIT -->
+        <header class="profile_sub_tit tit topbar_sub">
+          <a href="US_disturb_setting_01.html">
+            <img class="back" src="../img/sub/back_arrow_m.png" alt="뒤로가기">
+          </a>
+          <h2>방해금지모드</h2>
+        </header><!--//topbar_sub-->
+
+        <!-- contents -->
+        <main class="disturb_auto_place_container notice_style container_s">
+          <div class="sec">
+            <h4>장소명</h4>
+            <div class="input_txt placeForm">
+              <input type="text" placeholder="장소 이름 입력" class="txt_box">
+            </div>
+          </div>
+
+          <div class="sec">
+            <h4>주소</h4>
+            <div class="input_txt placeForm">
+              <input type="text" placeholder="도로명주소 검색" class="txt_box">
+              <img src="../img/sub/icon_search.png" alt="주소 검색하기">
+            </div>
+          </div>
+
+          <div class="sec">
+            <h4>상세주소</h4>
+            <div class="input_txt placeForm">
+              <input type="text" placeholder="거주 동, 호수 입력" class="txt_box">
+            </div>
+          </div>
+
+          <ul class="list">
+            <li class="alarem_control">지정 장소에서 자동실행
+              <div class="toggle arrow all_control_toggle">
+                <input type="checkbox" id="toggle" hidden>
+                <label for="toggle" class="toggle_switch">
+                  <span class="toggle_button"></span>
+                </label>
+              </div><!--//toggle-->
+            </li>
+          </ul>
+
+        </main><!--//disturb_auto_place_container-->
+
+      </div><!--//inner-->
+
+      <!-- btn -->
+      <ul class="btn_list">
+        <li><a href="US_disturb_setting_01_02.html" class="btn_fill">장소 등록</a></li>
+      </ul>
+
+    </div><!--//container-->
+    <div class="bg"></div>
+  </div><!--//wrap-->
+</body>
+
+</html>

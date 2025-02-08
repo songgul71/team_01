@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>돌봐효 - 사용자관리</title>
+
+  <link rel="shortcut icon" href="../img/common/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="../css/font.css">
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+
+  <script defer src="../js/jquery-3.7.1.min.js"></script>
+  <script defer src="../js/main.js"></script>
+
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="container">
+      <div class="inner">
+
+        <!-- TOP_BAT_SUB -->
+        <header class="profile_sub_tit tit topbar_sub">
+          <a href="US_alarem_01.html">
+            <img class="back" src="../img/sub/back_arrow_m.png" alt="뒤로가기">
+          </a>
+          <h2>알림 세부 설정</h2>
+        </header><!--//topbar_sub-->
+
+        <!-- Profile_Tap_Menu -->
+        <ul class="tab_menu">
+          <li class="active"><a href="US_alarem_01.html">
+              <h3>알림주기등록</h3>
+            </a></li>
+          <li><a href="US_alarem_03.html">
+              <h3>센서별알림</h3>
+            </a></li>
+        </ul><!--//tab_menu-->
+
+        <div class="alarem_modi_container tab_container_sec">
+
+          <div class="list">
+
+            <ol class="sensor_list_box">
+              <li class="sub_sensor">
+                <img class="boss_sensor" src="../img/common/icon_door.png" alt="현관 센서 아이콘">
+                <h4>현관</h4>
+                <img class="arrow" src="../img/sub/select_arrow.png" alt="센서 알림 설정 페이지로 이동">
+              </li>
+
+              <li>
+                <ul class="sub_sensor_box">
+                  <li class="sub_sensor">
+                    <img class="boss_sensor" src="../img/common/icon_refrigerator.png" alt="냉장고 센서 아이콘">
+                    <h4>냉장고</h4>
+                  </li>
+                  <li class="sub_sensor">
+                    <img class="boss_sensor" src="../img/common/icon_toilet.png" alt="화장실 센서 아이콘">
+                    <h4>화장실</h4>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+
+            <ul class="lowrank_sensor">
+              <li>
+                <div class="array">
+                  <img src="../img/sub/icon_move.png" alt="움직임 감지 센서 아이콘">
+                  움직임감지
+                </div>
+              </li>
+              <li>
+                <div class="array">
+                  <img src="../img/sub/icon_open.png" alt="문열림 감지 센서 아이콘">
+                  문열림감지
+                </div>
+              </li>
+            </ul><!--//lowrank_sensor-->
+          </div>
+
+          <div class="time_setting_container container_S">
+            <div class="sec">
+              <h4>반복횟수</h4>
+              <div class="input_txt">
+                <label for="one">
+                  <input type="radio" class="alarem_repeat" name="repeat" id="one">1회
+                </label>
+                <label for="thr">
+                  <input type="radio" class="alarem_repeat" name="repeat" id="thr" checked>3회
+                </label>
+                <label for="fiv">
+                  <input type="radio" class="alarem_repeat" name="repeat" id="fiv">5회
+                </label>
+                <label for="sev">
+                  <input type="radio" class="alarem_repeat" name="repeat" id="sev">7회
+                </label>
+              </div><!--//input_txt-->
+            </div>
+
+            <div class="sec">
+              <h4>반복주기</h4>
+              <div class="input_txt">
+                <label for="min05">
+                  <input id="min05" type="radio" class="alarem_repeat" name="min">5분
+                </label>
+                <label for="min10">
+                  <input id="min10" type="radio" class="alarem_repeat" name="min" checked>10분
+                </label>
+                <label for="min15">
+                  <input id="min15" type="radio" class="alarem_repeat" name="min">15분
+                </label>
+                <label for="min20">
+                  <input id="min20" type="radio" class="alarem_repeat" name="min">20분
+                </label>
+              </div>
+            </div><!--//sec-->
+          </div><!--//time_setting_container-->
+
+        </div><!--//alarem_container-->
+
+      </div><!--//inner-->
+
+      <!-- btn -->
+      <ul class="btn_list">
+        <li><a href="US_alarem_01_02.html" class="btn_fill">저장</a></li>
+      </ul>
+
+    </div><!--//container-->
+    <div class="bg"></div>
+  </div><!--//wrap-->
+
+</body>
+
+</html>

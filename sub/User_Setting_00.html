@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>돌봐효 - 사용자관리</title>
+
+  <link rel="shortcut icon" href="../img/common/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="../css/font.css">
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+
+  <script defer src="../js/jquery-3.7.1.min.js"></script>
+  <script defer src="../js/main.js"></script>
+
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="container">
+      <div class="inner">
+
+        <!-- 0300 사용자 관리 첫 화면 -->
+        <header class="profile_tit tit topbar_sub">
+          <h2>사용자관리</h2>
+        </header>
+
+        <!----***프로필 정보***---->
+        <main class="user_profile_container container_s">
+
+          <!-- 0300 보호자 -->
+          <div class="sec">
+            <h3 class="sec_tit">보호자</h3>
+
+            <ul class="list">
+              <li><a href="US_protector_01.html">
+                  <div class="flex">홍돌봄
+                    <p class="f_14">010-1111-5678<span class="line">가족</span></p>
+                  </div>
+                  <img class="arrow" src="../img/sub/arrow_m.png" alt="보호자 정보 페이지로 이동">
+                </a></li>
+
+              <li><a href="US_protector_01.html">
+                  <div class="flex">등록된 보호자
+                    <span class="f_14">3</span>
+                  </div>
+                  <img class="arrow" src="../img/sub/arrow_m.png" alt="보호자 정보 페이지로 이동">
+                </a></li>
+            </ul>
+          </div>
+
+          <!-- 0300 보호대상자 -->
+          <div class="sec">
+            <h3 class="sec_tit">보호대상자</h3>
+
+            <div class="protect">
+              <a href="US_person_protection_01.html">
+                <div class="protect_flex_box">
+                  <div class="probat_img"></div>
+                  <dl class="personal">
+                    <dt>홍길동
+                      <p class="f_14">87세<span class="line">남</span></p>
+                    </dt>
+                    <dd class="f_14">010-1234-5678</dd>
+                    <dd class="f_14">부산진구 부전동</dd>
+                  </dl>
+                </div>
+                <img class="arrow_protect" src="../img/sub/arrow_m.png" alt="보호대상자 정보 페이지로 이동">
+              </a>
+            </div>
+          </div><!--//sec-->
+
+          <!-- 0300 알림 -->
+          <div class="sec">
+            <h3 class="sec_tit">알림</h3>
+
+            <ul class="list">
+              <li class="alarem_control">전체알림
+                <div class="toggle arrow all_control_toggle">
+                  <input type="checkbox" id="toggle" hidden>
+                  <label for="toggle" class="toggle_switch">
+                    <span class="toggle_button"></span>
+                  </label>
+                </div><!--//toggle-->
+              </li>
+
+              <li><a href="US_alarem_01.html">알림 세부설정
+                  <img class="arrow" src="../img/sub/arrow_m.png" alt="알림 세부 설정 페이지로 이동">
+                </a></li>
+
+              <li><a href="US_disturb_setting_01.html">방해금지모드
+                  <img class="arrow" src="../img/sub/arrow_m.png" alt="방해금지모드 페이지로 이동">
+                </a></li>
+            </ul>
+          </div><!--//sec-->
+
+          <!-- 0300 공지 -->
+          <div class="sec">
+            <h3 class="sec_tit">공지</h3>
+
+            <ul class="list">
+              <li><a href="#">사용설명서
+                  <img class="arrow" src="../img/sub/arrow_m.png" alt="사용설명서 페이지로 이동">
+                </a></li>
+
+              <li><a href="US_notice_01.html">공지사항
+                  <img class="arrow" src="../img/sub/arrow_m.png" alt="공지사항 페이지로 이동">
+                </a></li>
+
+              <li><a href="#">이용약관
+                  <img class="arrow" src="../img/sub/arrow_m.png" alt="이용약관 페이지로 이동">
+                </a></li>
+            </ul>
+          </div><!--//sec-->
+
+          <!-- 0300 고객문의 -->
+          <div class="sec">
+            <h3 class="sec_tit">고객문의</h3>
+
+            <ul class="list">
+              <li><a href="#">고객센터연결
+                  <img class="arrow" src="../img/sub/arrow_m.png" alt="고객센터 연결 페이지로 이동">
+                </a></li>
+
+              <li><a href="#">자주 묻는 질문
+                  <img class="arrow" src="../img/sub/arrow_m.png" alt="자주 묻는 질문 페이지로 이동">
+                </a></li>
+            </ul>
+          </div><!--//sec-->
+
+          <!-- 0300 계정설정 -->
+          <div class="sec">
+            <h3 class="sec_tit">계정설정</h3>
+
+            <ul class="list">
+              <li><a href="#">비밀번호 변경
+                  <img class="arrow" src="../img/sub/arrow_m.png" alt="비밀번호 변경 페이지로 이동">
+                </a></li>
+
+              <li><a href="#">로그아웃
+                  <img class="arrow" src="../img/sub/arrow_m.png" alt="로그아웃 페이지로 이동">
+                </a></li>
+
+              <li><a href="#">회원탈퇴
+                  <img class="arrow" src="../img/sub/arrow_m.png" alt="회원탈퇴 페이지로 이동">
+                </a></li>
+            </ul>
+          </div><!--//sec-->
+
+          <!-- 0300 앱정보 -->
+          <div class="sec">
+            <h3 class="sec_tit">앱정보</h3>
+
+            <ul class="list">
+              <li><a href="#">Ver.11.0.2
+                  <img class="arrow" src="../img/sub/arrow_m.png" alt="앱 버전 확인 및 업데이트 페이지로 이동">
+                </a></li>
+
+              <li><a href="#">서비스 만료일 <span>2026년 09월 01일</span>
+                  <img class="arrow" src="../img/sub/arrow_m.png" alt="이용 중 서비스 확인 페이지로 이동">
+                </a></li>
+            </ul>
+          </div><!--//sec-->
+
+        </main><!--//user_profile_wrapper-->
+
+      </div><!--//inner-->
+    </div><!--//container-->
+
+    <!-- 하단 내비게이션바-->
+    <ul id="nav_bar">
+      <li><a href="../main.html"><img src="../img/common/icon_home_gray.png" alt="메인홈"></a></li>
+      <li><a href="mydevice.html"><img src="../img/common/icon_sensors_gray.png" alt="내기기"></a></li>
+      <li><a href="User_Setting_00.html"><img src="../img/common/icon_user_blue.png" alt="사용자관리"></a></li>
+    </ul><!-- //nav_bar -->
+
+    <div class="bg"></div>
+  </div><!--//wrap-->
+</body>
+
+</html>

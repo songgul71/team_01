@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>돌봐효 - 비밀번호 찾기</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../img/common/favicon.png" type="image/x-icon">
+
+  <!-- font -->
+  <link rel="stylesheet" href="../css/font.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+
+  <!-- js -->
+  <script defer src="../js/jquery-3.7.1.min.js"></script>
+  <script defer src="../js/main.js"></script>
+
+</head>
+
+<body>
+  <!-- 문서시작 -->
+  <div id="wrap">
+
+    <!-- 상단바 -->
+    <div class="topbar_sub">
+      <a href="pw_02.html"><img src="../img/sub/back_arrow_m.png" alt="뒤로가기"></a>
+      <h2>비밀번호 찾기</h2>
+    </div>
+
+    <!-- PW찾기 -->
+    <div class="container login findlogin">
+
+      <!-- inner -->
+      <div class="inner">
+
+        <!-- 상단텍스트 -->
+        <div class="top_txt">
+          <p>
+            <span class="highlight">비밀번호</span>를 <br>
+            재설정해 주세요.
+          </p>
+        </div><!-- //top_txt -->
+
+        <!-- 하단텍스트 -->
+        <div class="bottom_txt">
+          <p>새로운 계정 비밀번호를 입력해 주세요.</p>
+        </div><!-- //bottom_txt -->
+
+        <!-- 새비밀번호입력 -->
+        <form class="txt_form">
+          <input type="password" class="txt_box" placeholder="새로운 비밀번호">
+          <input type="password" class="txt_box" placeholder="비밀번호 확인">
+        </form>
+
+      </div><!-- //inner -->
+
+      <!-- 버튼리스트 -->
+      <ul class="btn_list">
+        <li><a class="btn_fill" href="#">비밀번호 재설정</a></li>
+      </ul><!-- //btn_list -->
+
+      <!-- 완료모달 -->
+      <div class="modal_wrap complete">
+        <!-- 모달박스 -->
+        <div class="modal_box">
+          <!-- 모달텍스트 -->
+          <div class="modal_txt">
+            <h5>비밀번호 변경완료</h5>
+            <p>
+              변경이 완료되었습니다.<br>
+              보안을 위해 재로그인을 진행해 주세요.
+            </p>
+          </div><!-- //modal_txt -->
+          <!-- 모달버튼 -->
+          <ul class="modal_btn_list">
+            <li class="btn fill">확인</li>
+          </ul>
+        </div><!-- //modal_box -->
+
+      </div><!-- //modal_wrap complete -->
+
+    </div><!-- //container login findlogin -->
+
+    <!-- 배경 -->
+    <div class="bg"></div>
+
+  </div><!-- //wrap -->
+</body>
+
+</html>

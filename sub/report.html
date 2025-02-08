@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>돌봐효 - 등록된기기</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../img/common/favicon.png" type="image/x-icon">
+
+  <!-- font -->
+  <link rel="stylesheet" href="../css/font.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+
+  <!-- js -->
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/main.js"></script>
+
+</head>
+
+
+<body>
+  <!-- 문서시작 -->
+  <div id="wrap">
+
+    <!-- 상단바 -->
+    <header class="topbar_sub">
+      <a href="../main.html"><img src="../img/sub/back_arrow_m.png" alt="뒤로가기"></a>
+      <h2>기기 리포트</h2>
+    </header><!-- //topbar_sub -->
+
+    <div class="container report">
+
+      <!-- inner -->
+      <div class="inner">
+
+        <main id="sub_main">
+
+          <!--알림 카테고리 메뉴-->
+          <ul class="menu_list">
+            <li id="door" class="active">현관</li>
+            <li id="refrigerator">냉장고</li>
+            <li id="toilet">화장실</li>
+            <li id="siren">돌봄콜</li>
+          </ul><!--.menu_list-->
+
+          <!--재실상태 확인카드-->
+          <div id="status_card">
+            <div class="inner">
+              <ul>
+                <li>
+                  <h4>홍길동님은 현재 <span>재실</span> 상태입니다.</h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!--1주일 달력-->
+          <div id="calendar">
+            <h6 class="top">
+              <button class="prev"><img src="../img/sub/back_arrow_m.png" alt="저번주"></button>
+              <button class="now">2024년 9월</button>
+              <button class="next"><img src="../img/sub/back_arrow_m.png" alt="다음주"></button>
+            </h6><!--.top-->
+            <div class="bottom">
+              <ul class="day">
+                <li>일</li>
+                <li class="active">월</li>
+                <li>화</li>
+                <li>수</li>
+                <li>목</li>
+                <li>금</li>
+                <li>토</li>
+              </ul>
+              <div class="date">
+                <button>1</button>
+                <button class="active">2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>7</button>
+              </div><!--.date-->
+            </div><!--.bottom-->
+          </div>
+
+          <!--리포트 내역-->
+          <div class="report_menu">
+
+            <ul id="report01" class="report_list">
+
+              <li class="line">
+                <div class="circle">
+                  <span class="now"></span>
+                  <span class="past"></span>
+                  <span class="past"></span>
+                  <span class="past"></span>
+                  <span class="past"></span>
+                  <span class="line_connect"></span>
+                </div><!--.line-->
+              </li>
+
+              <li class="close_sensor">
+                <div>
+                  <span class="time">17:11</span>
+                  <div class="report_card">
+                    <i class="icon close"></i>
+                    <div>
+                      <h3>문열림 감지</h3>
+                      <p>현관 닫힘</p>
+                    </div><!--.txt_box-->
+                  </div><!--.report_card-->
+                </div>
+              </li>
+
+              <li class="open_sensor">
+                <div>
+                  <span class="time">17:10</span>
+                  <div class="report_card">
+                    <i class="icon open"></i>
+                    <div>
+                      <h3>문열림 감지</h3>
+                      <p>현관 열림</p>
+                    </div><!--.txt_box-->
+                  </div><!--.report_card-->
+                </div>
+              </li>
+
+              <li class="move_sensor">
+                <div>
+                  <span class="time">17:05</span>
+                  <div class="report_card">
+                    <i class="icon move"></i>
+                    <div>
+                      <h3>동작 감지</h3>
+                      <p>현관 내 활동</p>
+                    </div><!--.txt_box-->
+                  </div><!--.report_card-->
+                </div>
+              </li>
+
+              <li class="close_sensor">
+                <div>
+                  <span class="time">09:01</span>
+                  <div class="report_card">
+                    <i class="icon close"></i>
+                    <div>
+                      <h3>문열림 감지</h3>
+                      <p>현관 닫힘</p>
+                    </div><!--.txt_box-->
+                  </div><!--.report_card-->
+                </div>
+              </li>
+
+              <li class="open_sensor">
+                <div>
+                  <span class="time">09:00</span>
+                  <div class="report_card">
+                    <i class="icon open"></i>
+                    <div>
+                      <h3>문열림 감지</h3>
+                      <p>현관 열림</p>
+                    </div><!--.txt_box-->
+                  </div><!--.report_card-->
+                </div>
+              </li>
+            </ul>
+
+            <ul id="report02" class="report_list">
+
+              <li class="line">
+                <div class="circle">
+                  <span class="now"></span>
+                  <span class="past"></span>
+                  <span class="past"></span>
+                  <span class="past"></span>
+                  <span class="past"></span>
+                  <span class="line_connect"></span>
+                </div><!--.line-->
+              </li>
+
+              <li class="close_sensor">
+                <div>
+                  <span class="time">17:11</span>
+                  <div class="report_card">
+                    <i class="icon close"></i>
+                    <div>
+                      <h3>문열림 감지</h3>
+                      <p>냉장고 닫힘</p>
+                    </div><!--.txt_box-->
+                  </div><!--.report_card-->
+                </div>
+              </li>
+
+              <li class="open_sensor">
+                <div>
+                  <span class="time">17:10</span>
+                  <div class="report_card">
+                    <i class="icon open"></i>
+                    <div>
+                      <h3>문열림 감지</h3>
+                      <p>냉장고 열림</p>
+                    </div><!--.txt_box-->
+                  </div><!--.report_card-->
+                </div>
+              </li>
+
+              <li class="close_sensor">
+                <div>
+                  <span class="time">12:01</span>
+                  <div class="report_card">
+                    <i class="icon close"></i>
+                    <div>
+                      <h3>문열림 감지</h3>
+                      <p>냉장고 닫힘</p>
+                    </div><!--.txt_box-->
+                  </div><!--.report_card-->
+                </div>
+              </li>
+
+
+
+              <li class="open_sensor">
+                <div>
+                  <span class="time">11:59</span>
+                  <div class="report_card">
+                    <i class="icon open"></i>
+                    <div>
+                      <h3>문열림 감지</h3>
+                      <p>냉장고 열림</p>
+                    </div><!--.txt_box-->
+                  </div><!--.report_card-->
+                </div>
+              </li>
+
+              <li class="close_sensor">
+                <div>
+                  <span class="time">11:58</span>
+                  <div class="report_card">
+                    <i class="icon close"></i>
+                    <div>
+                      <h3>문열림 감지</h3>
+                      <p>냉장고 닫힘</p>
+                    </div><!--.txt_box-->
+                  </div><!--.report_card-->
+                </div>
+              </li>
+            </ul>
+
+            <ul id="report03" class="report_list">
+
+              <li class="line">
+                <div class="circle">
+                  <span class="now"></span>
+                  <span class="past"></span>
+                  <span class="past"></span>
+                  <span class="past"></span>
+                  <span class="past"></span>
+                  <span class="line_connect"></span>
+                </div><!--.line-->
+              </li>
+
+              <li class="move_sensor">
+                <div>
+                  <span class="time">20:57</span>
+                  <div class="report_card">
+                    <i class="icon move"></i>
+                    <div>
+                      <h3>동작 감지</h3>
+                      <p>화장실 내 활동</p>
+                    </div><!--.txt_box-->
+                  </div><!--.report_card-->
+                </div>
+              </li>
+
+              <li class="move_sensor">
+                <div>
+                  <span class="time">20:56</span>
+                  <div class="report_card">
+                    <i class="icon move"></i>
+                    <div>
+                      <h3>동작 감지</h3>
+                      <p>화장실 내 활동</p>
+                    </div><!--.txt_box-->
+                  </div><!--.report_card-->
+                </div>
+              </li>
+
+              <li class="move_sensor">
+                <div>
+                  <span class="time">14:57</span>
+                  <div class="report_card">
+                    <i class="icon move"></i>
+                    <div>
+                      <h3>동작 감지</h3>
+                      <p>화장실 내 활동</p>
+                    </div><!--.txt_box-->
+                  </div><!--.report_card-->
+                </div>
+              </li>
+
+              <li class="move_sensor">
+                <div>
+                  <span class="time">14:56</span>
+                  <div class="report_card">
+                    <i class="icon move"></i>
+                    <div>
+                      <h3>동작 감지</h3>
+                      <p>화장실 내 활동</p>
+                    </div><!--.txt_box-->
+                  </div><!--.report_card-->
+                </div>
+              </li>
+
+
+
+              <li class="move_sensor">
+                <div>
+                  <span class="time">07:01</span>
+                  <div class="report_card">
+                    <i class="icon move"></i>
+                    <div>
+                      <h3>동작 감지</h3>
+                      <p>화장실 내 활동</p>
+                    </div><!--.txt_box-->
+                  </div><!--.report_card-->
+                </div>
+              </li>
+
+            </ul>
+
+            <ul id="report04" class="report_list">
+
+              <li class="line">
+                <div class="circle">
+                  <span class="now"></span>
+                  <span class="past"></span>
+                  <span class="past"></span>
+                  <span class="past"></span>
+                  <span class="past"></span>
+                  <span class="line_connect"></span>
+                </div><!--.line-->
+              </li>
+
+              <li class="siren_sensor">
+                <div>
+                  <span class="time">15:14</span>
+                  <div class="report_card">
+                    <i class=" icon call"></i>
+                    <div>
+                      <h3>돌봄콜 요청</h3>
+                      <p>돌봄콜 요청</p>
+                    </div><!--.txt_box-->
+                  </div><!--.report_card-->
+                </div>
+              </li>
+
+              <li class="siren_sensor">
+                <div>
+                  <span class="time">14:28</span>
+                  <div class="report_card">
+                    <i class=" icon call"></i>
+                    <div>
+                      <h3>돌봄콜 요청</h3>
+                      <p>돌봄콜 요청</p>
+                    </div><!--.txt_box-->
+                  </div><!--.report_card-->
+                </div>
+              </li>
+
+              <li class="siren_sensor">
+                <div>
+                  <span class="time">12:44</span>
+                  <div class="report_card">
+                    <i class=" icon call"></i>
+                    <div>
+                      <h3>돌봄콜 요청</h3>
+                      <p>돌봄콜 요청</p>
+                    </div><!--.txt_box-->
+                  </div><!--.report_card-->
+                </div>
+              </li>
+
+              <li class="siren_sensor">
+                <div>
+                  <span class="time">07:44</span>
+                  <div class="report_card">
+                    <i class=" icon call"></i>
+                    <div>
+                      <h3>돌봄콜 요청</h3>
+                      <p>돌봄콜 요청</p>
+                    </div><!--.txt_box-->
+                  </div><!--.report_card-->
+                </div>
+              </li>
+
+              <li class="siren_sensor">
+                <div>
+                  <span class="time">05:44</span>
+                  <div class="report_card">
+                    <i class=" icon call"></i>
+                    <div>
+                      <h3>돌봄콜 요청</h3>
+                      <p>돌봄콜 요청</p>
+                    </div><!--.txt_box-->
+                  </div><!--.report_card-->
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+        </main>
+
+      </div><!-- //inner -->
+
+    </div><!-- //container report -->
+
+    <!-- 배경 -->
+    <div class="bg"></div>
+
+  </div><!-- //wrap -->
+</body>
+
+</html>

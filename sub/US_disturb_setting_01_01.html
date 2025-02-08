@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>돌봐효 - 사용자관리</title>
+
+  <link rel="shortcut icon" href="../img/common/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="../css/font.css">
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+
+  <script defer src="../js/jquery-3.7.1.min.js"></script>
+  <script defer src="../js/main.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="container">
+
+      <div class="inner">
+
+        <!-- TOP_BAT_SUB -->
+        <header class="profile_sub_tit tit topbar_sub">
+          <a href="User_Setting_00.html">
+            <img class="back" src="../img/sub/back_arrow_m.png" alt="뒤로가기">
+          </a>
+          <h2>방해금지모드</h2>
+        </header><!--//topbar_sub-->
+
+
+        <main class="sec disturb_setting_container container_s">
+
+          <ul class="list notice_style">
+            <li class="padding_list">지정 장소에서 자동 실행
+              <div class="toggle arrow">
+                <input type="checkbox" id="toggle" hidden>
+                <label for="toggle" class="toggle_switch">
+                  <span class="toggle_button"></span>
+                </label>
+              </div><!--//toggle-->
+            </li>
+
+            <li class="none_txt"><a href="US_disturb_setting_03.html">지정장소를 등록하세요
+                <p>상세 주소를 제외한 주소가 나타납니다.</p>
+                <img class="arrow" src="../img/sub/arrow_m.png" alt="설정한 장소 수정 페이지로 이동">
+              </a></li>
+
+            <li class="notice_txt">지정 장소는 최대 한 곳만 등록 가능합니다.</li>
+
+            <li><a href="#">
+                <h4>방해금지모드</h4>
+                <strong>22:00 - 06:00</strong>
+                <p class="set_day">매일</p>
+                <div class="toggle arrow">
+                  <input type="checkbox" id="toggle_02" hidden>
+                  <label for="toggle_02" class="toggle_switch_02">
+                    <span class="toggle_button_02"></span>
+                  </label>
+                </div><!--//toggle-->
+              </a></li>
+
+            <li><a href="#">
+                <h4>아버지댁 방문 시간</h4>
+                <strong>10:00 - 15:00</strong>
+                <p class="set_day">토, 일</p>
+                <div class="toggle arrow">
+                  <input type="checkbox" id="toggle_03" hidden>
+                  <label for="toggle_03" class="toggle_switch_03">
+                    <span class="toggle_button_03"></span>
+                  </label>
+                </div><!--//toggle-->
+              </a></li>
+
+            <li><a href="#">
+                <h4>야간 근무</h4>
+                <strong>22:00 - 07:00</strong>
+                <p class="set_day">월, 수, 토</p>
+                <div class="toggle arrow toggle_active">
+                  <input type="checkbox" id="toggle_04" hidden checked>
+                  <label for="toggle_04" class="toggle_switch_04" checked>
+                    <span class="toggle_button_04"></span>
+                  </label>
+                </div><!--//toggle-->
+              </a></li>
+          </ul>
+        </main><!--//disturb_setting_container-->
+
+      </div><!--//inner-->
+
+      <!-- btn -->
+      <ul class="btn_list">
+        <li><a href="US_disturb_setting_02.html" class="btn_fill">시간 추가</a></li>
+      </ul>
+
+    </div><!--//container-->
+    <div class="bg"></div>
+  </div><!--//wrap-->
+</body>
+
+</html>

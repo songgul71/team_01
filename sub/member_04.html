@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>돌봐효 - 회원가입</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../img/common/favicon.png" type="image/x-icon">
+
+  <!-- font -->
+  <link rel="stylesheet" href="../css/font.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+
+  <!-- js -->
+  <script defer src="../js/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+  <!-- 문서시작 -->
+  <div id="wrap">
+
+    <!-- 상단바 -->
+    <div class="topbar_sub">
+      <a href="member_01.html"><img src="../img/sub/back_arrow_m.png" alt="뒤로가기"></a>
+      <h2>회원가입</h2>
+    </div>
+
+    <!-- PW찾기 -->
+    <div class="container login member">
+
+      <!-- inner -->
+      <div class="inner">
+
+        <!-- 상단텍스트 -->
+        <div class="top_txt">
+          <p>
+            <span class="highlight">생년월일</span>을 <br>입력해 주세요.
+          </p>
+        </div><!-- //top_txt -->
+
+        <!-- 하단텍스트 -->
+        <div class="bottom_txt">
+          <p>보호대상자의 생년월일을 입력해 주세요.</p>
+        </div><!-- //bottom_txt -->
+
+        <!-- 생년월일입력 -->
+        <form class="txt_form">
+          <input type="number" class="txt_box" placeholder="년도(4자)" oninput='handleOnInput(this, 4)' required>
+          <input type="number" class="txt_box" placeholder="월" oninput='handleOnInput(this, 2)' required>
+          <input type="number" class="txt_box" oninput='handleOnInput(this, 2)' placeholder="일" required>
+        </form>
+
+      </div><!-- //inner -->
+
+      <!-- 버튼리스트 -->
+      <ul class="btn_list">
+        <li><a class="btn_stroke" href="member_03.html">이전</a></li>
+        <li><a class="btn_fill" href="member_05.html">다음</a></li>
+      </ul><!-- //btn_list -->
+
+    </div><!-- //container login member -->
+
+    <!-- 배경 -->
+    <div class="bg"></div>
+
+  </div><!-- //wrap -->
+
+  <!-- js -->
+  <script>
+    function handleOnInput(el, maxlength) {
+      if (el.value.length > maxlength) {
+        el.value
+          = el.value.substr(0, maxlength);
+      }
+    }
+  </script>
+</body>
+
+
+</html>

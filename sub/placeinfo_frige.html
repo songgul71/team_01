@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>돌봐효 - 센서정보 (냉장고)</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../img/common/favicon.png" type="image/x-icon">
+
+  <!-- font -->
+  <link rel="stylesheet" href="../css/font.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+
+  <!-- js -->
+  <script defer src="../js/jquery-3.7.1.min.js"></script>
+  <script defer src="../js/main.js"></script>
+
+</head>
+
+<body>
+
+  <!-- 문서시작 -->
+  <div id="wrap">
+
+    <!-- 상단바 -->
+    <header class="topbar_sub">
+      <a href="mydevice.html"><img src="../img/sub/back_arrow_m.png" alt="뒤로가기"></a>
+      <h2>센서정보</h2>
+    </header><!-- //topbar_sub -->
+
+    <!-- 센서정보 (냉장고) -->
+    <div class="container placeinfo frigepg">
+
+      <!-- inner -->
+      <div class="inner">
+
+        <!-- 장소 섹션 -->
+        <div class="sec">
+          <!-- 섹션제목 -->
+          <h3 class="tit">장소</h3>
+
+          <!-- 선택 -->
+          <ol class="sel_wrap fix_box">
+            <!-- 냉장고 -->
+            <li class="sel_box">
+              <i class="small_icon frige"></i>
+              <a href="placeinfo_frige.html">냉장고</a>
+              <span class="select_arrow"></span>
+            </li>
+            <!-- 현관 -->
+            <li class="sel_box">
+              <i class="small_icon door"></i>
+              <p>현관</p>
+            </li>
+            <!-- 화장실 -->
+            <li class="sel_box">
+              <i class="small_icon toilet"></i>
+              <p>화장실</p>
+            </li>
+            <!-- 돌봄콜 -->
+            <li class="sel_box">
+              <i class="small_icon siren"></i>
+              <p>돌봄콜</p>
+            </li>
+          </ol><!-- //sel_wrap fix_box -->
+        </div><!-- //sec -->
+
+
+        <!-- 센서 섹션 -->
+        <div class="sec">
+          <!-- 섹션제목 -->
+          <h3 class="tit">센서</h3>
+
+          <!-- 센서추가 -->
+          <a href="#" class="add_box gray">
+            <i class="small_icon small_sensor"></i>
+            <p>센서추가</p>
+            <span class="add"></span>
+          </a><!-- //add_box -->
+
+          <!-- 센서리스트 -->
+          <ul class="sensor_card_list">
+            <!-- 문열림 -->
+            <li class="sensor_card movecard">
+              <!-- 센서명 -->
+              <div class="tit">
+                <i class="icon open"></i>
+                <h4>문열림 센서</h4>
+              </div>
+              <!-- 상세정보 -->
+              <ol class="txt txt_on">
+                <!-- 설치일자 -->
+                <li>
+                  <!-- 배터리 -->
+                  <span class="battery b_small"></span>
+                  <p>설치 일자</p>
+                  <p>2024.08.30(금) 16:05</p>
+                </li>
+                <!-- 기기ID -->
+                <li>
+                  <p>기기 ID <span class="copy"></span></p>
+                  <p>00158d0008449d5a</p>
+                </li>
+              </ol><!-- //txt -->
+              <ul class="sensor_btn_list">
+                <li class="btn stroke placemove">위치이동</li>
+                <li class="btn fill disconnect">연결해제</li>
+              </ul>
+            </li><!-- //문열림 -->
+
+          </ul><!-- //sensor_card_list -->
+
+        </div><!-- //sec -->
+
+      </div><!-- //inner -->
+
+      <!-- 해제모달 -->
+      <div class="modal_wrap modal_disconnect">
+        <!-- 모달박스 -->
+        <div class="modal_box">
+          <!-- 모달텍스트 -->
+          <div class="modal_txt">
+            <h5>연결을 해제하시겠습니까?</h5>
+            <p>연결을 해제할 경우,<br>
+              현재 등록된 기기 정보가 사라집니다.</p>
+          </div><!-- //modal_txt -->
+          <!-- 모달버튼 -->
+          <ul class="modal_btn_list">
+            <li class="btn stroke">취소</li>
+            <li class="btn fill">해제</li>
+          </ul>
+        </div><!-- //modal_box -->
+      </div><!-- //modal_wrap modal_disconnect -->
+
+    </div><!-- //container placeinfo frigepg -->
+
+    <!-- 배경 -->
+    <div class="bg"></div>
+
+  </div><!-- //wrap -->
+
+</body>
+
+</html>

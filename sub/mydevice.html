@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>돌봐효 - 내기기</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../img/common/favicon.png" type="image/x-icon">
+
+  <!-- font -->
+  <link rel="stylesheet" href="../css/font.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+
+  <!-- js -->
+  <script defer src="../js/jquery-3.7.1.min.js"></script>
+  <script defer src="../js/main.js"></script>
+
+</head>
+
+<body>
+
+  <!-- 문서시작 -->
+  <div id="wrap">
+
+    <!-- 상단바 -->
+    <header class="topbar_sub">
+      <h2>내기기</h2>
+    </header><!-- //topbar_sub -->
+
+    <!-- 내기기 -->
+    <div class="container mydevice">
+
+      <!-- inner -->
+      <div class="inner">
+
+        <!-- 섹션 -->
+        <div class="sec">
+          <!-- 섹션제목 -->
+          <h3 class="tit">허브</h3>
+
+          <!-- 허브박스 -->
+          <div class="hub_box">
+            <ul>
+              <!-- 허브 연결중 -->
+              <li class="hub_txt">
+                <a href="#">
+                  <!-- off로 시작하나 on이 기본상태 -->
+                  <!-- 아이콘 -->
+                  <i class="icon hub"></i>
+                  <!-- 내용 -->
+                  <div class="txt">
+                    <h4>h-1234</h4>
+                    <p>2024-08-06 설치</p>
+                  </div>
+                  <span class="connect_btn hub_on">연결됨</span>
+                </a>
+              </li>
+
+              <!-- 허브 연결안됨 -->
+              <li class="hub_txt">
+                <a href="connect_hub.html">
+                  <!-- off로 시작하나 on이 기본상태 -->
+                  <!-- 아이콘 -->
+                  <i class="icon hub"></i>
+                  <!-- 내용 -->
+                  <div class="txt">
+                    <h4>연결되지 않음</h4>
+                    <p>기기를 연결해 주세요.</p>
+                  </div>
+                  <span class="connect_btn hub_off">연결안됨</span>
+                </a>
+              </li>
+            </ul>
+          </div><!-- //hub_box -->
+        </div><!-- //sec -->
+
+
+        <!-- 섹션 -->
+        <div class="sec">
+          <!-- 섹션제목 -->
+          <h3 class="tit">장소</h3>
+
+          <!-- 장소추가 -->
+          <a href="placeadd.html" class="add_box">
+            <i class="small_icon small_pin"></i>
+            <p>장소추가</p>
+            <span class="add"></span>
+          </a><!-- //add_box -->
+
+          <!-- 장소리스트 -->
+          <ul class="place_card_list">
+            <!-- 현관 -->
+            <li>
+              <a href="placeinfo_door.html">
+                <!-- 아이콘 -->
+                <i class="icon door"></i>
+                <!-- 센서정보 -->
+                <ol class="place_card">
+                  <li>
+                    <h4>현관</h4>
+                    <div class="place_txt">
+                      <i class="sensor_icon small_open"></i>
+                      <p>문열림 센서</p>
+                      <span class="battery b_small"></span>
+                    </div>
+                  </li>
+                  <li class="place_txt gray">
+                    <i class="sensor_icon small_move"></i>
+                    <p>센서등록안됨</p>
+                    <span class="battery b_none"></span>
+                  </li>
+                </ol><!-- //place_card -->
+              </a>
+            </li><!-- //현관 -->
+
+            <!-- 냉장고 -->
+            <li>
+              <a href="#">
+                <!-- 아이콘 -->
+                <i class="icon frige"></i>
+                <!-- 센서정보 -->
+                <ol class="place_card">
+                  <li class="gray">
+                    <h4>냉장고</h4>
+                    <div class="place_txt">
+                      <i class="sensor_icon small_open"></i>
+                      <p>문열림 센서</p>
+                      <span class="battery b_none"></span>
+                    </div>
+                  </li>
+                </ol><!-- //place_card -->
+              </a>
+            </li><!-- //냉장고 -->
+
+            <!-- 화장실 -->
+            <li>
+              <a href="#">
+                <!-- 아이콘 -->
+                <i class="icon toilet"></i>
+                <!-- 센서정보 -->
+                <ol class="place_card">
+                  <li class="gray">
+                    <h4>화장실</h4>
+                    <div class="place_txt">
+                      <i class="sensor_icon small_move"></i>
+                      <p>문열림 센서</p>
+                      <span class="battery b_none"></span>
+                    </div>
+                  </li>
+                </ol><!-- //place_card -->
+              </a>
+            </li><!-- //화장실 -->
+
+            <!-- 돌봄콜 -->
+            <li>
+              <a href="#">
+                <!-- 아이콘 -->
+                <i class="icon siren"></i>
+                <!-- 센서정보 -->
+                <ol class="place_card">
+                  <li class="gray">
+                    <h4>돌봄콜</h4>
+                    <div class="place_txt">
+                      <i class="sensor_icon small_call"></i>
+                      <p>문열림 센서</p>
+                      <span class="battery b_none"></span>
+                    </div>
+                  </li>
+                </ol><!-- //place_card -->
+              </a>
+            </li><!-- //돌봄콜 -->
+          </ul><!-- //place_card_list -->
+
+        </div><!-- //sec -->
+
+      </div><!-- //inner -->
+
+    </div><!-- //container mydevice -->
+
+    <!-- 하단 내비게이션바-->
+    <ul id="nav_bar">
+      <li><a href="../main.html"><img src="../img/common/icon_home_gray.png" alt="메인홈"></a></li>
+      <li><a href="mydevice.html"><img src="../img/common/icon_sensors_blue.png" alt="내기기"></a></li>
+      <li><a href="User_Setting_00.html"><img src="../img/common/icon_user_gray.png" alt="사용자관리"></a></li>
+    </ul><!-- //nav_bar -->
+
+    <!-- 배경 -->
+    <div class="bg"></div>
+
+  </div><!-- //wrap -->
+
+</body>
+
+</html>

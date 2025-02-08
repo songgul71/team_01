@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>돌봐효 - 기기연결(현관)</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../img/common/favicon.png" type="image/x-icon">
+
+  <!-- font -->
+  <link rel="stylesheet" href="../css/font.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+
+  <!-- js -->
+  <script defer src="../js/jquery-3.7.1.min.js"></script>
+  <script defer src="../js/main.js"></script>
+
+</head>
+
+<body>
+
+  <!-- 문서시작 -->
+  <div id="wrap">
+
+    <!-- 상단바 -->
+    <header class="topbar_sub">
+      <a href="mydevice.html"><img src="../img/sub/back_arrow_m.png" alt="뒤로가기"></a>
+      <h2>기기연결 (현관)</h2>
+    </header><!-- //topbar_sub -->
+
+    <!-- 내기기 -->
+    <div class="container connect hub">
+
+      <!-- inner -->
+      <div class="inner">
+
+        <!-- 섹션 -->
+        <div class="sec">
+          <!-- 섹션제목 -->
+          <h3 class="tit">등록방법</h3>
+
+          <!-- 아이콘 -->
+          <i class="icon door"></i>
+
+          <!-- 등록방법 -->
+          <ul class="process_list">
+            <!-- 방법1 -->
+            <li>
+              <span>1</span>
+              <p>
+                <strong>제품 측면</strong>에 위치한 <strong>작은 버튼</strong>을 LED가 뜰 때까지 <strong>길게 눌렀다</strong> 떼주세요.
+              </p>
+            </li>
+
+            <!-- 방법2 -->
+            <li>
+              <span>2</span>
+              <p>
+                LED가 <strong>빠르게 점등</strong>하면 앱 화면 하단에 위치한 <strong>[기기검색]</strong> 버튼을 눌러주세요.
+              </p>
+            </li>
+
+            <!-- 방법3 -->
+            <li>
+              <span>3</span>
+              <p>
+                만약 LED가 빠르게 점등하지 않는다면 <strong>15초 이상</strong> 누른 후 떼보시길 바랍니다.
+              </p>
+            </li>
+          </ul><!-- //process_list -->
+
+        </div><!-- //sec -->
+
+      </div><!-- //inner -->
+
+      <!-- 버튼리스트 -->
+      <ul class="btn_list">
+        <li class="btn_fill">기기검색</li>
+      </ul><!-- //btn_list -->
+
+      <!-- 검색모달 -->
+      <div class="modal_wrap sch">
+        <!-- 모달박스 -->
+        <div class="modal_box">
+          <!-- 모달텍스트 -->
+          <div class="modal_txt">
+            <h5>기기 검색중</h5>
+            <p>
+              센서를 검색하고 있습니다.<br>
+              잠시만 기다려주세요.
+            </p>
+          </div><!-- //modal_txt -->
+          <!-- 스피너 -->
+          <div class="loading">
+            <div class="spinner"></div>
+          </div>
+        </div><!-- //modal_box -->
+      </div><!-- //modal_wrap sch -->
+
+      <!-- 완료모달 -->
+      <div class="modal_wrap complete">
+        <!-- 모달박스 -->
+        <div class="modal_box">
+          <!-- 모달텍스트 -->
+          <div class="modal_txt">
+            <h5>연결완료</h5>
+            <p>기기가 연결 되었습니다.</p>
+          </div><!-- //modal_txt -->
+          <!-- 모달버튼 -->
+          <ul class="modal_btn_list">
+            <li><a class="btn fill" href="placeinfo_door.html">확인</a></li>
+          </ul>
+        </div><!-- //modal_box -->
+      </div><!-- //modal_wrap complete -->
+
+    </div><!-- //container connect door -->
+
+    <!-- 배경 -->
+    <div class="bg"></div>
+
+  </div><!-- //wrap -->
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>돌봐효 - 사용자관리</title>
+
+  <link rel="shortcut icon" href="../img/common/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="../css/font.css">
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+
+  <script defer src="../js/jquery-3.7.1.min.js"></script>
+  <script defer src="../js/main.js"></script>
+
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="container">
+      <div class="inner">
+
+        <!-- TOP_BAT_SUB -->
+        <header class="profile_sub_tit tit topbar_sub">
+          <a href="US_person_protection_01.html">
+            <img class="back" src="../img/sub/back_arrow_m.png" alt="뒤로가기">
+          </a>
+          <h2>프로필</h2>
+        </header><!--//topbar_sub-->
+
+        <!-- Profile_Tap_Menu -->
+        <ul class="tab_menu">
+          <li><a href="US_protector_01.html">
+              <h3>보호자</h3>
+            </a></li>
+          <li class="active"><a href="US_person_protection_01.html">
+              <h3>보호대상자</h3>
+            </a></li>
+        </ul><!--//tab_menu-->
+
+        <!-- contents -->
+        <main class="protector_modi_container container_s tab_container_sec">
+
+          <div class="sec">
+            <h4>프로필</h4>
+            <div class="protection_profileimg_change">
+              <img class="profile_img" src="../img/common/img_user.png" alt="보호대상자 사진">
+              <div class="change_cam">
+                <img src="../img/sub/cam.png" alt="보호대상자 사진 변경">
+              </div><!--//protection_profileimg_change-->
+            </div>
+          </div>
+
+          <label class="sec">
+            <h4>이름</h4>
+            <div class="input_txt placeForm">
+              <input type="text" class="txt_box" placeholder="보호 대상자 이름" value="홍길동"
+                onfocus="this.value=''; return true">
+              <img src="../img/sub/cancle.png" alt="내용 삭제" class="">
+            </div>
+          </label>
+
+          <div class="sec">
+
+            <h4>
+              <label for="birth_date">
+                생년월일
+              </label>
+            </h4>
+            <div class="input_txt">
+              <label class="birth_date placeForm">
+                <input type="text" class="txt_box" value="1937" placeholder="1940" id="birth_date"
+                  onfocus="this.value=''; return true">년
+                <input type="text" class="txt_box" value="09" placeholder="01" onfocus="this.value=''; return true">월
+                <input type="text" class="txt_box" value="03" placeholder="01" onfocus="this.value=''; return true">일
+              </label>
+            </div>
+          </div>
+
+          <label class="sec">
+            <h4>성별</h4>
+            <div class="input_txt">
+              <div class="protection_sex placeForm">
+                <input type="radio" class="protector_sex" name="sex" checked>남성
+              </div>
+              <div class="protection_sex placeForm">
+                <input type="radio" class="protector_sex" name="sex">여성
+              </div>
+              <div class="protection_sex placeForm">
+                <input type="radio" class="protector_sex" name="sex">선택안함
+              </div>
+            </div>
+          </label>
+
+          <div class="sec">
+            <h4>
+              <label for="protec_num">
+                연락처
+              </label>
+            </h4>
+            <div class="input_txt protection_call_box placeForm">
+              <input type="text" class="protector_num txt_box" value="010" placeholder="010" id="protec_num"
+                onfocus="this.value=''; return true">
+              <span>-</span>
+              <input type="text" class="protector_num txt_box" value="1234" onfocus="this.value=''; return true">
+              <span>-</span>
+              <input type="text" class="protector_num txt_box" value="5678" onfocus="this.value=''; return true">
+            </div>
+          </div><!--//sec-->
+
+          <div class="sec">
+            <h4>
+              <label for="address_search">
+                주소
+              </label>
+            </h4>
+            <div class="input_txt placeForm">
+              <input type="text" placeholder="도로명 주소 입력" class="txt_box" id="address_search"
+                value="부산광역시 부산진구 부전동 00-0길(빌라)" onfocus="this.value=''; return true">
+              <img class="search" src="../img/sub/icon_search.png" alt="주소 검색하기">
+            </div>
+          </div>
+
+          <div class="sec">
+            <h4>
+              <label for="address_info">
+                상세주소
+              </label>
+            </h4>
+            <div class="input_txt placeForm">
+              <input type="text" placeholder="거주 동, 호수 입력" value="101호" class="txt_box" id="address_info"
+                onfocus="this.value=''; return true">
+            </div>
+          </div>
+
+        </main><!--//protector_modi_container modify -->
+      </div><!--//inner-->
+
+      <!-- btn -->
+      <ul class="btn_list">
+        <li><a href="US_person_protection_01.html" class="btn_stroke">취소</a></li>
+        <li><a href="US_person_protection_01.html" class="btn_fill">저장</a></li>
+      </ul>
+
+    </div><!--//container-->
+    <div class="bg"></div>
+  </div><!--//wrap-->
+</body>
+
+</html>
